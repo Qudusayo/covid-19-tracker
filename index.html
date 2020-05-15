@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>Tracker </title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <meta charset="utf-8">
+    <meta name="viewport"  content="width=device-width">
+    <meta name="description" content="covid-19 tracker for all countries , created by Yhoung dev">
+    <meta name="robots" content="index,follow">
+  </head>
+  <body>
+     <!--start-->
+ 
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top">
+            <center>
+            Covid-19 Tracker 
+            </center>
+
+          </div>
+          
+          <div class="elem">
+            <form>
+              <input type="text" class="form-control" placeholder="search country">
+            </form>
+            <button class="btn btn-warning"><img src="zoom.png" width="30px"></button>
+          </div>
+           <br>
+          <br>
+          
+        <center>  
+    <img src="load.gif" class="loader" width="50px" style="margin-top:50px; ">
+    </center>
+    <br>
+    <div  class="card"style="font-family:monospace; postion:relative; margin-top:30px;background:rgba(23,107,223,0.275)">
+             <h4 class="message "></h4>
+              <ul class="list">
+                <li class="country"></li>
+                
+                      <li class="cases"></li>
+                      <li class="today"></li>
+                    <li class="recovered"></li>
+                    
+                          <li class="deaths"></li>
+                          
+                    <li class="todayDeaths" ></li>           <li class="total"></li>
+                
+              </ul>
+            </div>
+        </div>
+        
+      </div>
+      <div class="recent">
+        <center>
+        <p class="saved"></p>
+    </center>
+      </div>
+      <!--error space-->
+      <div class="alert alert-warning">
+        <span class="cancel">
+          &times;
+        </span>
+        <p id="msg"></p>
+         <hr>
+      </div>
+      
+      <div class="autor">
+      
+        <p>Created by Yhoung Dev </p>
+  
+      </div>
+      
+      <!-- end of elemts -->
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
